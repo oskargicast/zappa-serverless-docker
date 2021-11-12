@@ -1,6 +1,7 @@
 {
     "lambda_docker_flask": {
         "app_function": "zdf.app.app",
+        "aws_region": "us-west-1",
         "profile_name": "default",
         "project_name": "test",
         "log_level": "INFO",

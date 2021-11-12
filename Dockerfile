@@ -1,11 +1,12 @@
 FROM amazon/aws-lambda-python:3.8
+# FROM public.ecr.aws/lambda/python:3.8
 
 ARG FUNCTION_DIR="/var/task/"
 
 COPY ./ ${FUNCTION_DIR}
 
 # temporary
-RUN yum update -y && yum install git -y 
+# RUN yum update -y && yum install git -y
 
 # Setup Python environment
 RUN pip install poetry
